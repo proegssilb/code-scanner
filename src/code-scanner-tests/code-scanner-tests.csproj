@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>Proegssilb.CodeScanner.Tests</AssemblyName>
+    <RootNamespace>Proegssilb.CodeScanner.Tests</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.1.1" />
+    <PackageReference Include="LightBDD.NUnit3" Version="2.3.4" />
+    <PackageReference Include="Microsoft.CodeAnalysis" Version="2.6.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
+    <PackageReference Include="Moq" Version="4.8.1" />
+    <PackageReference Include="NUnit" Version="3.9.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\code-scanner-lib\code-scanner-lib.csproj" />
+    <ProjectReference Include="..\code-scanner\code-scanner.csproj" />
+  </ItemGroup>
+
+</Project>
