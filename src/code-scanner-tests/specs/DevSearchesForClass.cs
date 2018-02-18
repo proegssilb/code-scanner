@@ -2,9 +2,6 @@
 using LightBDD.Framework.Scenarios.Basic;
 using LightBDD.NUnit3;
 using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Proegssilb.CodeScanner.Tests
 {

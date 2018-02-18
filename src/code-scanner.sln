@@ -7,11 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "code-scanner", "code-scanne
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "code-scanner-lib", "code-scanner-lib\code-scanner-lib.csproj", "{78DEDB27-54AF-4CAE-AFD9-63A73656DAB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "code-scanner-tests", "code-scanner-tests\code-scanner-tests.csproj", "{76D4F0A1-9B8E-43A1-A0FF-7A6CF38335A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "code-scanner-tests", "code-scanner-tests\code-scanner-tests.csproj", "{76D4F0A1-9B8E-43A1-A0FF-7A6CF38335A6}"
 	ProjectSection(ProjectDependencies) = postProject
 		{78DEDB27-54AF-4CAE-AFD9-63A73656DAB2} = {78DEDB27-54AF-4CAE-AFD9-63A73656DAB2}
 		{CC11DBBE-5432-46AB-8C91-DA48A1DFF5AB} = {CC11DBBE-5432-46AB-8C91-DA48A1DFF5AB}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "code-scanner-core-plugin", "code-scanner-core-plugin\code-scanner-core-plugin.csproj", "{E2287103-43A6-4380-8D7F-7E6DB8DEFF30}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{76D4F0A1-9B8E-43A1-A0FF-7A6CF38335A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76D4F0A1-9B8E-43A1-A0FF-7A6CF38335A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76D4F0A1-9B8E-43A1-A0FF-7A6CF38335A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2287103-43A6-4380-8D7F-7E6DB8DEFF30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2287103-43A6-4380-8D7F-7E6DB8DEFF30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2287103-43A6-4380-8D7F-7E6DB8DEFF30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2287103-43A6-4380-8D7F-7E6DB8DEFF30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
