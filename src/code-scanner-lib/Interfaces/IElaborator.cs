@@ -8,7 +8,7 @@ namespace Proegssilb.CodeScanner.Lib.Interfaces
     /// <summary>
     /// Elaborators are used to add more properties to existing data.
     /// </summary>
-    interface IElaborator<T>
+    public interface IElaborator<T>
     {
         //TODO: Make the return value of this actually work properly.
         /// <summary>

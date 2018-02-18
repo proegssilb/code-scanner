@@ -7,7 +7,7 @@ namespace Proegssilb.CodeScanner.Lib.Interfaces
     /// <summary>
     /// Writers write data in a persistent/indexed form. For example, into a database.
     /// </summary>
-    interface IWriter<T>
+    public interface IWriter<T>
     {
         /// <summary>
         /// As data arrives, store it.

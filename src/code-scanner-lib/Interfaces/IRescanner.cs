@@ -12,7 +12,7 @@ namespace Proegssilb.CodeScanner.Lib.Interfaces
     /// </summary>
     /// <typeparam name="TTrigger">The type of data that needs to be scanned.</typeparam>
     /// <typeparam name="TDiscovered">The type of data being discovered as a result of scanning.</typeparam>
-    interface IRescanner<TTrigger, TDiscovered>
+    public interface IRescanner<TTrigger, TDiscovered>
     {
         //TODO: Make the return value of this actually work properly.
         /// <summary>

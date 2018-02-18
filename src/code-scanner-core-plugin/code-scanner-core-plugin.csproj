@@ -16,4 +16,8 @@
     <Folder Include="Writers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\code-scanner-lib\code-scanner-lib.csproj" />
+  </ItemGroup>
+
 </Project>
