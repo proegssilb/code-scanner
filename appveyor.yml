@@ -8,8 +8,9 @@ dotnet_csproj:
     file_version: '{version}'
     informational_version: '{version}'
 
+image: Visual Studio 2017
+
 platform:
-    - x64
     - Any CPU
 
 configuration:
