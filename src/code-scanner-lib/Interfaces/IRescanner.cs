@@ -14,18 +14,17 @@ namespace Proegssilb.CodeScanner.Lib.Interfaces
     /// <typeparam name="TDiscovered">The type of data being discovered as a result of scanning.</typeparam>
     public interface IRescanner<TTrigger, TDiscovered>
     {
-        //TODO: Make the return value of this actually work properly.
         /// <summary>
         /// Provides a preliminary filter to reduce amount of traffic to this IRescanner.
         /// </summary>
         /// <returns>An expression/lambda describing which objects this IRescanner is interested in.</returns>
-        Expression<bool> GetFilter();
+        Expression<Func<TTrigger, bool>> GetFilter();
 
         /// <summary>
         /// Generate the next data for indexing.
         /// </summary>
         /// <param name="dataSource">An object that can be subscribed to in order to receive discovered data.</param>
         /// <param name="dataSink">An object to publish newly scanned data.</param>
-        void Scan(IObservable<TTrigger> dataSource, IObserver<TDiscovered> dataSink);
+        IObservable<TDiscovered> Scan(IObservable<TTrigger> dataSource);
     }
 }

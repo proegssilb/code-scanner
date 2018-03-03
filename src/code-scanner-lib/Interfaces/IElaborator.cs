@@ -10,12 +10,11 @@ namespace Proegssilb.CodeScanner.Lib.Interfaces
     /// </summary>
     public interface IElaborator<T>
     {
-        //TODO: Make the return value of this actually work properly.
         /// <summary>
         /// Provides a preliminary filter to reduce amount of traffic to this IElaborator.
         /// </summary>
         /// <returns>An expression/lambda describing which objects this IElaborator is interested in.</returns>
-        Expression<bool> GetFilter();
+        Expression<Func<T, bool>> GetFilter();
 
         /// <summary>
         /// Modify incoming data. Treat all data as immutable.

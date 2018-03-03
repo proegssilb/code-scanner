@@ -1,0 +1,20 @@
+Core Data Types:
+  - <DllReference>
+  - <SlnReference>
+  - <ProjectReference>
+  - <SourceFile>
+  - <Type>
+  - <AST>
+  - GraphNode
+  - GraphRel
+
+Execution Model:
+  - Scanners generate data to process
+  - Elaborators find more data from existing data
+    - Elaborators can generate more props for existing node (replace)
+    - Elaborators can generate more nodes/rels from existing nodes (add)
+    - Elaborators can create an explosion of new data
+    - Elaborators have a filter applied before they get called
+  - Writers get data into an indexed form
+  - Plugins are used to manage extensibility
+  - Reactive Extensions is used to keep data flowing nicely

@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>net471</TargetFramework>
     <AssemblyName>Proegssilb.CodeScanner.CorePlugin</AssemblyName>
     <RootNamespace>Proegssilb.CodeScanner.CorePlugin</RootNamespace>
   </PropertyGroup>
@@ -12,7 +12,6 @@
 
   <ItemGroup>
     <Folder Include="Elaborators\" />
-    <Folder Include="Scanners\" />
     <Folder Include="Writers\" />
   </ItemGroup>
 

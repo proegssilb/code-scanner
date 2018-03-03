@@ -19,6 +19,7 @@ So that I can find how classes map to solutions.")]
         {
             Runner.RunScenario(
                 Given_a_solution_with_no_projects,
+                Given_a_way_to_scan_solutions,
                 When_the_solution_has_been_scanned,
                 Then_no_projects_should_be_found
                 );

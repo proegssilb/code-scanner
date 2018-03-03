@@ -2,4 +2,4 @@
 
 using LightBDD.NUnit3;
 
-[assembly: LightBddScopeAttribute]
+[assembly: LightBddScope]
