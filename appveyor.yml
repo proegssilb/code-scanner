@@ -19,3 +19,6 @@ configuration:
 
 install:
     - nuget restore src\code-scanner.sln
+
+test_script:
+    - vstest.console /logger:Appveyor %APPVEYOR_BUILD_FOLDER%\src\code-scanner-tests\bin\%CONFIGURATION%\net471\Proegssilb.CodeScanner.Tests.dll
