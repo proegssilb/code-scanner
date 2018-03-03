@@ -2,8 +2,9 @@
 A code scanner for .NET applications
 
 # Dev work
-You'll need Visual Studio 2017, .NET Core, and nuget in order to get things setup.
-I'm also using ncrunch, but feel free to use your own nunit-compatible test runner.
+You'll need Visual Studio 2017, .NET Framework 4.7.1, and nuget in order to get
+things setup. I'm also using ncrunch, but feel free to use your own 
+nunit-compatible test runner.
 
 Other dependencies will be added later.
 

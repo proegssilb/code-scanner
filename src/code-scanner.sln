@@ -18,6 +18,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{74898BCA-71EF-4FDE-9888-9CA51427C8B5}"
 	ProjectSection(SolutionItems) = preProject
 		..\appveyor.yml = ..\appveyor.yml
+		..\README.md = ..\README.md
 		..\ideas-planning.txt = ..\ideas-planning.txt
 	EndProjectSection
 EndProject
