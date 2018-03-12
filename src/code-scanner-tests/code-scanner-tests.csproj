@@ -9,18 +9,33 @@
   <ItemGroup>
     <PackageReference Include="FluentAssertions" Version="5.1.2" />
     <PackageReference Include="LightBDD.NUnit3" Version="2.3.5" />
-    <PackageReference Include="Microsoft.CodeAnalysis" Version="2.6.1" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.6.0" />
+    <PackageReference Include="Microsoft.Build" Version="15.6.82" />
+    <PackageReference Include="Microsoft.Build.Framework" Version="15.6.82" />
+    <PackageReference Include="Microsoft.Build.Tasks.Core" Version="15.6.82" />
+    <PackageReference Include="Microsoft.CodeAnalysis" Version="2.7.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.6.1" />
     <PackageReference Include="Microsoft.Reactive.Testing" Version="3.1.1" />
-    <PackageReference Include="Moq" Version="4.8.1" />
+    <PackageReference Include="Moq" Version="4.8.2" />
     <PackageReference Include="NUnit" Version="3.9.0" />
-    <PackageReference Include="NUnit3TestAdapter" Version="3.9.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\code-scanner-core-plugin\code-scanner-core-plugin.csproj" />
     <ProjectReference Include="..\code-scanner-lib\code-scanner-lib.csproj" />
     <ProjectReference Include="..\code-scanner\code-scanner.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Library\" />
+    <Folder Include="specs\" />
+    <Folder Include="steps\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="UI\DevSearchesForClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 
 </Project>
