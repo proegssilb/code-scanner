@@ -12,7 +12,7 @@ namespace Proegssilb.CodeScanner.Lib.Interfaces
     /// </summary>
     /// <typeparam name="TTrigger">The type of data that needs to be scanned.</typeparam>
     /// <typeparam name="TDiscovered">The type of data being discovered as a result of scanning.</typeparam>
-    public interface IRescanner<TTrigger, TDiscovered>
+    public interface IRescanner<TTrigger, TDiscovered> : IRescanner
     {
         /// <summary>
         /// Provides a preliminary filter to reduce amount of traffic to this IRescanner.
@@ -27,4 +27,6 @@ namespace Proegssilb.CodeScanner.Lib.Interfaces
         /// <param name="dataSink">An object to publish newly scanned data.</param>
         IObservable<TDiscovered> Scan(IObservable<TTrigger> dataSource);
     }
+
+    public interface IRescanner { }
 }

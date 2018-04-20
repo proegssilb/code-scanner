@@ -28,8 +28,6 @@
 
   <ItemGroup>
     <Folder Include="Library\" />
-    <Folder Include="specs\" />
-    <Folder Include="steps\" />
   </ItemGroup>
 
   <ItemGroup>

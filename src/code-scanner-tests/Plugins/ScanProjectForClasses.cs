@@ -32,7 +32,7 @@ So that I can search for a class.")]
         public void ScanningProjectsWithClassesYieldsClasses()
         {
             Runner.RunScenario(
-                Given_a_solution_with_projects_and_classes,
+                Given_a_solution,
                 Given_the_solution_has_projects,
                 Given_the_projects_have_documents,
                 Given_a_way_to_scan_projects,
@@ -52,7 +52,7 @@ So that I can search for a class.")]
         private ITestableObserver<ClassDeclarationSyntax> _results;
         private IEnumerable<ClassDeclarationSyntax> _classes;
 
-        private void Given_a_solution_with_projects_and_classes()
+        private void Given_a_solution()
         {
             _workspace = new AdhocWorkspace();
             var si = SolutionInfo.Create(SolutionId.CreateNewId(), VersionStamp.Default);
